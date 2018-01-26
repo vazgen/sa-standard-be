@@ -79,6 +79,6 @@ class UserControllerTest extends WebTestCase
             'GET', '/api/v1/signout', [], [], ['CONTENT_TYPE' => 'application/json', 'HTTP_X-AUTH-TOKEN' => $token]
         );
 
-        $this->assertEquals(Response::HTTP_UNAUTHORIZED, $client->getResponse()->getStatusCode());
+        $this->assertEquals(Response::HTTP_FORBIDDEN, $client->getResponse()->getStatusCode());
     }
 }

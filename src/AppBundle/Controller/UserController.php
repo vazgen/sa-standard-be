@@ -134,7 +134,7 @@ class UserController extends Controller
      * )
      *
      * @SWG\Response(
-     *     response=401,
+     *     response=403,
      *     description="is not signed in"
      * )
      *
